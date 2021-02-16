@@ -1,0 +1,116 @@
+.card{
+height: 50%;
+width: 50%;
+background-color: seagreen !important;
+margin-left: 25%;
+overflow: hidden;
+}
+
+.card-header{
+background-color: red !important;
+text-align: center;
+
+
+}
+
+
+
+.show{
+    background-color: rgb(201, 197, 194) !important;
+    width: 100%;
+    border: gray !important;
+    /* border-style: ; */
+    border-radius: 5px;
+    
+}
+
+.show label{
+margin-left: 5px;
+}
+
+
+  .row{
+      height: 20px;
+      width: 50%;
+      background: rgb(243, 237, 237);
+      margin-left: 1px;
+  }
+.col0{
+    height: 20px;
+    background: #ddd;
+    width: 0%;
+   
+}
+  .col1{
+      height: 20px;
+      background: #920000;
+      width: 12.5%;
+     
+  }
+  .col2{
+    height: 20px;
+    background: #920000;
+    width: 25%;
+    
+}
+.col3{
+    height: 20px;
+    background: #920000;
+    width: 37.5%;
+    
+}
+.col4{
+    height: 20px;
+    background: #920000;
+    width: 50%;
+    
+}
+.col5{
+    height: 20px;
+    background: #920000;
+    width: 62.5%;
+   
+}
+.col6{
+    height: 20px;
+    background: #920000;
+    width: 75%;
+    
+}
+.col7{
+    height: 20px;
+    background: #920000;
+    width: 87.5%;
+    
+}  .col8{
+    height: 20px;
+    background: #920000;
+    width: 100%;
+    
+}
+.form-control{
+    width: 50%;
+}
+.matautocomplete{
+    margin-left: 150px;
+    padding-left: 150px;
+    background-color: indigo i !important;
+}
+.dropdown{
+    /* position: absolute; */
+    /* z-index: 1; */
+    width: 100%;
+    height: auto;
+    background-color: khaki;
+}
+.search{
+    width: 183px;
+}
+.dropdown-text-style{
+    padding: 10px;
+    font-family: sans-serif;
+    color:lightcoral !important;
+}
+.dropdown-text-style:hover{
+    background: #2C2C2C;
+}

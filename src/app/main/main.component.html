@@ -1,0 +1,92 @@
+<div class="card">
+ <div class="card-header"> <h3>SentiWordNet V 1.1</h3></div>
+    <div class="card-body">
+        <label for="a">Searching Word: </label>
+        <div class="search">
+            
+            
+
+        
+
+        
+                <input type="text"
+                 [value]="searchValue"
+                 placeholder="Search Word"
+                 aria-label="Number"
+                 matInput
+                 (keyup)="suggest($event)"
+                 [formControl]="typeahead"
+                 (click)="DropDown()"
+                  #input >
+                  <div class="dropdown" *ngIf='showDropDown'>
+                    <div (click)='selectValue(option)' class='dropdown-text-style' *ngFor="let option of suggestions">
+                        {{option}}
+                        
+                    </div>
+                  </div>
+             
+            
+        
+            
+           
+            
+            
+            
+                <button (click)="check(input.value)">Search</button>
+           
+            
+            
+
+        </div>
+        
+        
+        
+        <br>
+        <div class="show">
+            <label for="">Part of speech: {{pos}}</label>
+            <br>
+            <br>
+            <label for="">Synsets: {{Synset}}</label>
+            <br>
+            <br>
+            <label for="">Gloss: {{Meaning}}</label>
+
+        </div>
+
+  
+    </div>
+    <div class="card-footer">
+        <label for="a"  >positive</label>
+        <div class="row">
+            
+            
+            <div *ngIf="width1==0" class="col0" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==12.5" class="col1" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==25" class="col2" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==37.5" class="col3" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==50" class="col4" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==62.5" class="col5" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==75" class="col6" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==87.5" class="col7" style="text-align: center;">{{pos_score}}</div>
+            <div *ngIf="width1==100" class="col8" style="text-align: center;">{{pos_score}}</div>
+        </div>
+        <br>
+        <br>
+        <label for="a"  style="text-align: center;">negative </label>
+        <div class="row">
+            
+            <div *ngIf="width2==0" class="col0" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==12.5" class="col1" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==25" class="col2" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==37.5" class="col3" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==50" class="col4" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==62.5" class="col5" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==75" class="col6" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==87.5" class="col7" style="text-align: center;">{{neg_score}}</div>
+            <div *ngIf="width2==100" class="col8" style="text-align: center;">{{neg_score}}</div>
+        </div>
+
+    </div>
+        
+ 
+</div>
